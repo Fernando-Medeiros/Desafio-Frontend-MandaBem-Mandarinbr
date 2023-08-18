@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <section id="@head"></section>
+
+  <body>
+    <section id="@header"></section>
+
+    <section>
+      <div id="@top"></div>
+      <div id="@bottom"></div>
+    </section>
+
+    <section id="@footer"></section>
+
+    <script type="module" async>
+      import { LoadComponent } from "./static/js/LoadComponent.js";
+
+      await Promise.all([
+        LoadComponent("@head", "./templates/head.html"),
+
+        LoadComponent("@header", "./templates/header.html"),
+
+        LoadComponent("@top", "./views/index/banner-top.html"),
+        LoadComponent("@bottom", "./views/index/banner-bottom.html"),
+
+        LoadComponent("@footer", "./templates/footer.html"),
+      ]);
+    </script>
+  </body>
+</html>

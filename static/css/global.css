@@ -1,0 +1,56 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: var(--color-font-one);
+}
+
+:root {
+  --color-font-one: #ffffff;
+  --color-font-two: #222222;
+  --color-font-three: #646869;
+  --color-font-four: #b2b2b2;
+
+  --color-header-bg-one: #f2f2f2;
+  --color-header-bg-two: #ffffff;
+
+  --color-footer-bg-one: #fc4c02;
+
+  --color-linear-gradient-one: linear-gradient(
+    135deg,
+    #e94929 0%,
+    #e72357 100%
+  );
+  --color-linear-gradient-two: linear-gradient(
+    to right,
+    #ffffff,
+    #fc4c02,
+    #f8bfce
+  );
+  --color-linear-gradient-three: linear-gradient(to right, #c0392b, #8e44ad);
+  --color-linear-gradient-four: linear-gradient(to right, #49a09d, #5f2c82);
+  --color-linear-gradient-five: linear-gradient(to right, #38ef7d, #11998e);
+}
+
+html {
+  background-color: var(--color-header-bg-one);
+}
+
+body {
+  max-width: 1200px;
+  margin: auto;
+  background-color: var(--color-header-bg-two);
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-family: "Arial", sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

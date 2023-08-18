@@ -1,0 +1,115 @@
+<div id="banner-bottom-container" class="content-sub-container">
+  <div class="content">
+    <span class="banner-left"></span>
+
+    <h4 class="title">Petição para colocar Kobe Bryant no logo da NBA.</h4>
+
+    <p class="font">Font: Daily Mail</p>
+
+    <span class="gradient-left-bar"></span>
+  </div>
+
+  <div class="content">
+    <span class="banner-right"></span>
+
+    <h4 class="title">WhatsApp terá função de pagamentos em 2020.</h4>
+
+    <p class="font">Font: Proxima</p>
+
+    <span class="gradient-right-bar"></span>
+  </div>
+</div>
+
+<style>
+  #banner-bottom-container {
+    gap: 15px;
+    display: grid;
+    padding-top: 40px;
+    padding-inline: 36px;
+    grid-template-columns: 1fr 1fr;
+
+    .content {
+      gap: 5px;
+      display: grid;
+      cursor: pointer;
+      padding-block: 22px;
+    }
+    .title {
+      font-size: 22px;
+      text-align: left;
+      font-weight: bold;
+      color: var(--color-font-two);
+      background-color: var(--color-header-bg-two);
+    }
+    .font {
+      font-size: 11px;
+      font-style: italic;
+      color: var(--color-font-four);
+    }
+
+    .banner-left,
+    .banner-right {
+      height: 320px;
+      display: block;
+      position: relative;
+      background-size: cover;
+      background-position: top;
+      background-repeat: no-repeat;
+      border-bottom: 5px solid transparent;
+    }
+    .banner-left {
+      background-image: url("../static/images/content/nba.png");
+    }
+    .banner-right {
+      background-position: center;
+      background-image: url("../static/images/content/whatsapp.png");
+    }
+
+    .gradient-left-bar,
+    .gradient-right-bar {
+      height: 5px;
+      display: block;
+      max-width: 278px;
+    }
+    .gradient-left-bar {
+      background: var(--color-linear-gradient-four);
+    }
+    .gradient-right-bar {
+      background: var(--color-linear-gradient-five);
+    }
+  }
+
+  /* Effects */
+  #banner-bottom-container {
+    .banner-left:hover,
+    .banner-right:hover {
+      transition: all 0.2s ease-in-out;
+      border-color: var(--color-font-three);
+    }
+  }
+
+  @media (max-width: 700px) {
+    #banner-bottom-container {
+      padding-inline: 20px;
+      grid-template-columns: auto;
+    }
+  }
+  @media (max-width: 500px) {
+    #banner-bottom-container {
+      .title {
+        font-size: 20px;
+      }
+      .banner-left,
+      .banner-right {
+        height: 220px;
+      }
+    }
+  }
+  @media (max-width: 340px) {
+    #banner-bottom-container {
+      .title {
+        font-size: 18px;
+      }
+    }
+  }
+</style>

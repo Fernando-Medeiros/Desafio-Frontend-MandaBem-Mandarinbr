@@ -1,0 +1,96 @@
+<div id="banner-top-container">
+  <span class="banner"></span>
+
+  <h3 class="title">NRF 2020: conheça os top 5 assuntos do evento.</h3>
+
+  <p class="info">
+    O maior evento sobre varejo do mundo mostrando as tendências, oportunidades
+    e inovações para o setor.
+  </p>
+
+  <p class="font">Font: CMO ADOBE</p>
+
+  <span class="gradient-bar"></span>
+</div>
+
+<style>
+  #banner-top-container {
+    gap: 5px;
+    display: grid;
+    cursor: pointer;
+    padding-top: 40px;
+    padding-inline: 36px;
+
+    .banner {
+      z-index: 1;
+      height: 450px;
+      display: block;
+      position: relative;
+      background-size: cover;
+      background-position: top;
+      background-repeat: no-repeat;
+      border-bottom: 5px solid transparent;
+      background-image: url("../static/images/content/news.png");
+    }
+    .gradient-bar {
+      height: 5px;
+      display: block;
+      max-width: 278px;
+      background: var(--color-linear-gradient-three);
+    }
+    .title {
+      font-size: 36px;
+      text-align: left;
+      font-weight: bold;
+      color: var(--color-font-two);
+      background-color: var(--color-header-bg-two);
+    }
+    .info {
+      font-size: 18px;
+      line-height: 17px;
+      color: var(--color-font-three);
+    }
+    .font {
+      margin-top: 10px;
+      font-size: 11px;
+      font-style: italic;
+      color: var(--color-font-four);
+    }
+  }
+
+  /* Effects */
+  #banner-top-container {
+    .banner:hover {
+      transition: all 0.2s ease-in-out;
+      border-color: var(--color-font-three);
+    }
+  }
+
+  @media (max-width: 700px) {
+    #banner-top-container {
+      padding-inline: 20px;
+
+      .title {
+        font-size: 28px;
+      }
+      .banner {
+        height: 250px;
+        background-size: auto;
+      }
+    }
+  }
+  @media (max-width: 500px) {
+    #banner-top-container {
+      .title {
+        font-size: 22px;
+      }
+    }
+  }
+  @media (max-width: 340px) {
+    #banner-top-container {
+      .title {
+        font-size: 20px;
+      }
+    }
+  }
+</style>

@@ -1,0 +1,145 @@
+<header id="header-container">
+  <div class="left-container">
+    <img
+      class="image-circle"
+      src="../static/images/header/circle.png"
+      alt="circle"
+    />
+    <img
+      class="image-brand"
+      src="../static/images/header/brand.png"
+      alt="brand"
+    />
+    <img
+      class="image-bubbles"
+      src="../static/images/header/bubbles.png"
+      alt="bubbles"
+    />
+  </div>
+
+  <img
+    class="image-arrow"
+    src="../static/images/header/arrow.png"
+    alt="arrow"
+  />
+
+  <div class="right-container">
+    <img
+      class="image-woman"
+      src="../static/images/header/woman.png"
+      alt="woman"
+    />
+
+    <div>
+      <span>
+        <p class="text">
+          NRF2020,<br />
+          Kobe Bryant e <br />
+          WhatsApp Payment
+        </p>
+        <h5>edição 06</h5>
+      </span>
+
+      <img src="../static/images/header/waves.png" alt="waves" />
+
+      <img
+        class="image-triangle"
+        src="../static/images/header/triangle.png"
+        alt="triangle"
+      />
+    </div>
+  </div>
+</header>
+
+<style>
+  #header-container {
+    width: 100%;
+    height: 139px;
+    display: grid;
+    padding-top: 20px;
+    position: relative;
+    padding-inline: 36px;
+    grid-template-columns: 1fr 1fr;
+    background-image: var(--color-linear-gradient-one);
+
+    .left-container {
+      display: grid;
+    }
+    .right-container {
+      display: grid;
+      padding-right: 5px;
+      text-align: right;
+    }
+
+    .text {
+      font-size: 16px;
+    }
+
+    .image-circle {
+      left: -70px;
+      position: absolute;
+    }
+    .image-brand {
+      z-index: 1;
+      height: 67;
+      width: 200px;
+      cursor: pointer;
+      padding-top: 15px;
+    }
+    .image-bubbles {
+      top: 6.5rem;
+      margin-right: 2rem;
+      position: absolute;
+      justify-self: right;
+    }
+    .image-arrow {
+      top: 1rem;
+      position: absolute;
+      justify-self: center;
+    }
+    .image-woman {
+      z-index: 1;
+      top: 2.3rem;
+      width: 158px;
+      position: absolute;
+    }
+    .image-triangle {
+      top: 5px;
+      position: absolute;
+      justify-self: right;
+    }
+  }
+
+  @media (max-width: 700px) {
+    #header-container {
+      padding-inline: 20px;
+
+      .image-woman {
+        top: 3.4rem;
+        width: 134px;
+        height: 153px;
+      }
+      .image-bubbles {
+        top: 6.8rem;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+  @media (max-width: 500px) {
+    #header-container {
+      .image-brand {
+        width: 90%;
+      }
+      .image-woman {
+        display: none;
+      }
+    }
+  }
+  @media (max-width: 340px) {
+    #header-container {
+      .text {
+        font-size: 13px;
+      }
+    }
+  }
+</style>
