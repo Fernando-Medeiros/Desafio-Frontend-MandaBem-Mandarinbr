@@ -1,17 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <section id="@head"></section>
-
-  <body>
-    <section id="@header"></section>
-
-    <section>
-      <div id="@top"></div>
-      <div id="@bottom"></div>
-    </section>
-
-    <section id="@footer"></section>
-
+  <head id="@head">
     <script type="module" async>
       import { LoadComponent } from "./static/js/LoadComponent.js";
 
@@ -26,5 +15,16 @@
         LoadComponent("@footer", "./templates/footer.html"),
       ]);
     </script>
+  </head>
+
+  <body>
+    <section id="@header"></section>
+
+    <section>
+      <div id="@top"></div>
+      <div id="@bottom"></div>
+    </section>
+
+    <section id="@footer"></section>
   </body>
 </html>
